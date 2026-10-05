@@ -13,12 +13,12 @@ const MENU = [
       {
         id: "state-duty-report-administrative", label: "Վարչական"
       },
-      // {
-      //   id: "state-duty-report-appeal", label: "Վերաքննիչ"
-      // },
-      // {
-      //   id: "state-duty-report-cassation", label: "Վճռաբեկ"
-      // },
+      {
+        id: "state-duty-report-appeal", label: "Վերաքննիչ"
+      },
+      {
+        id: "state-duty-report-cassation", label: "Վճռաբեկ"
+      },
     ]
   },
   // Tools section follows
