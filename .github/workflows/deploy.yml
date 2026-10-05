@@ -29,7 +29,7 @@ jobs:
           lftp -u "$SFTP_USER","$SFTP_PASSWORD" -p "${SFTP_PORT:-22}" "sftp://$SFTP_HOST" <<EOF
           set sftp:auto-confirm yes
           set net:max-retries 2
-          mirror --reverse --only-newer --verbose \
+          mirror --reverse --verbose \
             --exclude-glob .git/ \
             --exclude-glob .github/ \
             --exclude-glob README.md \
