@@ -3,7 +3,7 @@ function renderHome(pageEl) {
   pageEl.innerHTML = `
     <div class="empty-page home-page">
       <div class="empty-icon">⚖</div>
-      <h2 class="home-title">«Վարչական Դատարան» ելեկտրոնային համակարգի վերլուծական պորտալ</h2>
+      <h2 class="home-title">«Վարչական Դատարան» էլեկտրոնային համակարգի </br><span class="highlight">Վերլուծական Պորտալ</span></h2>
     </div>`;
 }
 
