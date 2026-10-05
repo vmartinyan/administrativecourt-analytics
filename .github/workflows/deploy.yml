@@ -36,3 +36,24 @@ jobs:
             . "$SFTP_REMOTE_DIR"
           bye
           EOF
+
+      - name: List remote directories (diagnostic)
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASSWORD: ${{ secrets.SFTP_PASSWORD }}
+          SFTP_REMOTE_DIR: ${{ secrets.SFTP_REMOTE_DIR }}
+        run: |
+          lftp -u "$SFTP_USER","$SFTP_PASSWORD" -p "${SFTP_PORT:-22}" "sftp://$SFTP_HOST" <<EOF
+          set sftp:auto-confirm yes
+          pwd
+          echo "--- login dir ---"
+          ls -la
+          echo "--- remote dir ---"
+          cd "$SFTP_REMOTE_DIR"
+          pwd
+          ls -la
+          ls -la js
+          bye
+          EOF
