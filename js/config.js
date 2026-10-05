@@ -4,7 +4,7 @@ const MENU = [
   { header: "Հաշվետվություններ" },
   { id: "rep-admin", label: "Վարչական" },
   { id: "rep-appeal", label: "Վերաքննիչ" },
-  { id: "rep-cassation", label: "Վճռաբեկ" },
+  // { id: "rep-cassation", label: "Վճռաբեկ" },
   // State Duty section follows
   { header: "Պետական տուրք" },
   { id: "state-duty-search", label: "Որոնում" },
@@ -13,12 +13,12 @@ const MENU = [
       {
         id: "state-duty-report-administrative", label: "Վարչական"
       },
-      {
-        id: "state-duty-report-appeal", label: "Վերաքննիչ"
-      },
-      {
-        id: "state-duty-report-cassation", label: "Վճռաբեկ"
-      },
+      // {
+      //   id: "state-duty-report-appeal", label: "Վերաքննիչ"
+      // },
+      // {
+      //   id: "state-duty-report-cassation", label: "Վճռաբեկ"
+      // },
     ]
   },
   // Tools section follows
